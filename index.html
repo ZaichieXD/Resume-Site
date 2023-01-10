@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Zolina</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c0b1a6d7d7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header" id="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-sharp fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="https://dawngamesstudios.itch.io/" target="_blank">GAMES</a></li>
+                    <li><a href="https://www.artstation.com/zaichie" target="_blank">3D WORKS</a></li>
+                    <li><a href="#my-certificates">CERTIFICATES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Who am I? and what do I do?</h1>
+            <p>
+                I'm a game developer and 3D artist, I have a passion for creating interactive and immersive experiences for players.
+                I have a good understanding of game design principles and 3D modeling techniques, as well as experience using a variety of
+                software tools and engines. I'm an indie game developer and I have been honing my skills to become more productive in the game industry.
+            </p>
+            <a href="#games" class="hero-btn">Know More</a>
+        </div>
+    </section>
+    <!-------------Games------------------->
+
+    <section class="games" id="games">
+        <h1>Games I Made</h1>
+        <p>These are the games I made over the years</p>
+
+        <div class="row">
+            <div class="games-col">
+                <h3>Tap The Circle</h3>
+                <p>
+                    Tap the Circle is an mobile arcade game where a circle appears anywhere and tapping it makes it disappear,
+                    but be aware that there is a timer and failure to tap the circle will make you lose a life.
+                    this is the first game where I implemented Unity Ads.
+                </p>
+            </div>
+
+            <div class="games-col">
+                <h3>The Way Out</h3>
+                <p>
+                    The Way Out is a puzzle game and the first game I published. Your goal is to escape the maze by placing the boxes on the buttons.
+                    You will need to escape before the time runs out failing to exit is Game Over.
+                </p>
+            </div>
+
+            <div class="games-col">
+                <h3>Sky Run</h3>
+                <p>
+                    Sky Run is a Endless Runner Game made with GDevelop. It's the first game that I made to join a game jam.
+                    The Game is not complete and has lots of errors and mistakes. It was my first time using GDevelop even though this game has flaws and failed, I had fun creating this.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-------------3D Works------------------->
+    <section class="art-works">
+        <h1>My 3D Works</h1>
+        <p>These are the 3D Artworks I made over the years</p>
+
+        <div class="row">
+            <div class="art-works-col">
+                <img src="images/lowpoly-forest.jpg" />
+                <div class="layer">
+                    <h3>Lowpoly Forest</h3>
+                </div>
+            </div>
+
+            <div class="art-works-col">
+                <img src="images/isoxya.jpg" />
+                <div class="layer">
+                    <h3>Isoxya</h3>
+                </div>
+            </div>
+
+            <div class="art-works-col">
+                <img src="images/bedroom.jpg" />
+                <div class="layer">
+                    <h3>Bedroom</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---Certificates--->
+
+    <section class="my-certificates" id="my-certificates">
+        <h1>My Certificates</h1>
+        <p>
+            These are the certificates I earned in attending webinars
+        </p>
+
+        <div class="row">
+            <div class="my-certificates-col">
+                <img src="images/gamedevcert.jpg" />
+                <h3>Game Development at Microsoft - Azure, Playfab and ID@Azure</h3>
+                <p>This is the certificate i got when I attended a webinar at January 5, 2023</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h1>Do you want to apply for my services?</h1>
+        <a href="contact.html" class="hero-btn">Contact Me</a>
+
+    </section>
+
+    <!---Footer--->
+    <section class="footer">
+        <h4>My Links</h4>
+        <p>You can also reach me at these links</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/zaichie.legend/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.artstation.com/zaichie" target="_blank"><i class="fa-brands fa-artstation"></i></a>
+            <a href="https://dawngamesstudios.itch.io/" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
+            <a href="https://www.linkedin.com/in/charleszolina-zaichie/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </section>
+
+    <!-------------JavaScript Menu------------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>
